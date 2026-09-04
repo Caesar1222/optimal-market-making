@@ -5,7 +5,11 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+<<<<<<< HEAD
       - "CMakeLists.txt"
+=======
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
@@ -15,8 +19,13 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -29,10 +38,17 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+<<<<<<< HEAD
       - "CMakeCCompilerId.c.in"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+=======
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     search_context:
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64"
@@ -69,7 +85,11 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       ENV{INCLUDE}:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\ATLMFC\\include"
@@ -84,10 +104,17 @@ events:
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       Compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
@@ -97,6 +124,7 @@ events:
       Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36256 for x64
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
+<<<<<<< HEAD
       CMakeCCompilerId.c
       Microsoft (R) Incremental Linker Version 14.51.36256.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
@@ -111,18 +139,43 @@ events:
       
       The C compiler identification is MSVC, found in:
         C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/build/x64-Debug/CMakeFiles/4.3.1-msvc1/CompilerIdC/CMakeCCompilerId.exe
+=======
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.51.36256.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/4.3.1-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       
   -
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:1347 (message)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
         Note: including file: C:\\Users\\cesar\\source\\repos\\Caesar1222\\optimal-market-making\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\cesar\\optimal-market-making\\optimal-market-making\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
         
       Found prefix "Note: including file: "
   -
@@ -131,8 +184,13 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -220,15 +278,24 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "_CMAKE_TOOL_WITH_PATH"
     description: "Path to a program."
@@ -417,13 +484,22 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -511,13 +587,22 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "CMAKE_MT"
     description: "Path to a program."
@@ -626,13 +711,22 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -720,6 +814,7 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
   -
     kind: "find-v1"
@@ -1035,15 +1130,24 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:596 (enable_language)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:569 (__windows_compiler_msvc_enable_rc)"
+<<<<<<< HEAD
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
       - "CMakeLists.txt"
+=======
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
     description: "RC compiler"
@@ -1101,9 +1205,15 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/sbin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/"
+<<<<<<< HEAD
       - "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug/bin/"
       - "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug/sbin/"
       - "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug/"
+=======
+      - "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug/bin/"
+      - "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug/sbin/"
+      - "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug/"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.exe"
@@ -1164,11 +1274,16 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake"
+<<<<<<< HEAD
         - "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
   -
     kind: "try_compile-v1"
@@ -1224,11 +1339,15 @@ events:
       Running the C compiler's linker: "C:/PROGRA~1/MICROS~2/18/COMMUN~1/VC/Tools/MSVC/1451~1.362/bin/Hostx64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.51.36256.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+=======
+        - "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+<<<<<<< HEAD
       - "CMakeLists.txt"
     checks:
       - "Detecting CXX compiler ABI info"
@@ -1237,6 +1356,17 @@ events:
       binary: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-xhwf57"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+=======
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ox670g"
+      binary: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ox670g"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -1244,11 +1374,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-xhwf57'
         
         Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8fdc1
         [1/2] C:\\PROGRA~1\\MICROS~2\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8fdc1.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_8fdc1.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
         [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_8fdc1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8fdc1.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_8fdc1.exe /implib:cmTC_8fdc1.lib /pdb:cmTC_8fdc1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+=======
+        Change Dir: 'C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ox670g'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6211d
+        [1/2] C:\\PROGRA~1\\MICROS~2\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6211d.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_6211d.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_6211d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6211d.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_6211d.exe /implib:cmTC_6211d.lib /pdb:cmTC_6211d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
         
       exitCode: 0
   -
@@ -1256,7 +1394,11 @@ events:
     backtrace:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+<<<<<<< HEAD
       - "CMakeLists.txt"
+=======
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -1274,15 +1416,22 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+<<<<<<< HEAD
       - "CMakeLists.txt"
+=======
+      - "CMakeLists.txt:2 (project)"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
     message: |
       Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~2/18/COMMUN~1/VC/Tools/MSVC/1451~1.362/bin/Hostx64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.51.36256.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+<<<<<<< HEAD
 ...
 
 ---
 events:
+=======
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
   -
     kind: "find_package-v1"
     backtrace:
@@ -1322,6 +1471,7 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
+<<<<<<< HEAD
         path: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/pybind11Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1335,6 +1485,21 @@ events:
         reason: "no_exist"
       -
         path: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+=======
+        path: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/build/x64-Debug/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
         mode: "cps"
         reason: "no_exist"
       -
@@ -1934,10 +2099,18 @@ events:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+<<<<<<< HEAD
       CMAKE_INSTALL_PREFIX: "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+      CMAKE_INSTALL_PREFIX: "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake"
+<<<<<<< HEAD
         - "C:/Users/cesar/source/repos/Caesar1222/optimal-market-making/out/install/x64-Debug"
+=======
+        - "C:/Users/cesar/optimal-market-making/optimal-market-making/out/install/x64-Debug"
+>>>>>>> 7f4f070a833b1e0cf7100883894fccc3de34ee35
 ...
