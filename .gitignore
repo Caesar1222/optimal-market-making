@@ -1,9 +1,9 @@
 .venv/
-.vs
+.vs/
 build/
 *.egg-info/
 __pycache__/
 *.pyd
 *.so
-data/
+.data/
 .vscode/
