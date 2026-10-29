@@ -1,1 +1,143 @@
-run pip install -r requirements.txt
+# Optimal Market Making under Inventory Risk
+
+A market-making simulator that implements and evaluates the **Avellaneda–Stoikov**
+optimal-quoting model, framing a market maker's core problem — how to place bid and
+ask quotes while managing inventory risk — as a **stochastic optimal control**
+problem. The system pairs a performance-critical **C++** simulation core with a
+**Python** research layer (bridged via **pybind11**), calibrated on live crypto
+order-book data.
+
+---
+
+## Overview
+
+A market maker earns the bid–ask spread by continuously quoting both sides of the
+book, but every fill leaves it holding inventory that is exposed to adverse price
+moves. The central trade-off is between quoting tightly (frequent fills, little edge,
+fast inventory churn) and quoting widely (rare fills, fat edge). The Avellaneda–
+Stoikov model solves this as a control problem: it quotes around an inventory-adjusted
+*reservation price* and sets an *optimal spread* that widens with volatility and risk
+aversion, actively steering inventory back toward zero.
+
+This project builds the full pipeline to study that model: it collects real market
+data, calibrates the model's parameters from it, simulates quoting against a
+realistic fill model, and rigorously compares the strategy to a tuned baseline — on
+risk-adjusted performance and inventory risk, not raw PnL.
+
+## Key results
+
+- **A-S vs. baseline:** the Avellaneda–Stoikov strategy achieved higher risk-adjusted
+  return (`PnL / σ(PnL)`) while holding roughly **[X]× lower** peak inventory than a
+  fairly-tuned fixed-spread baseline — i.e. comparable returns with far less exposure.
+- **Robustness:** the advantage held across a range of risk-aversion settings and
+  across **[N]** bootstrapped price paths, not just the single recorded sample.
+- **Where it breaks:** under trending markets the model's no-drift assumption fails
+  and it suffers adverse selection — a documented limitation rather than a hidden one.
+- **Performance:** porting the simulation loop to C++ gave a **~[N]×** speedup over the
+  pure-Python implementation, validated against a Python reference for exact agreement.
+
+*(Replace the bracketed figures with your measured numbers.)*
+
+## Architecture
+
+The design mirrors production quant systems: a fast compiled core for the hot loop,
+a flexible Python layer for research, bridged in one place.
+
+```
+Exchange API (ccxt) ──► record.py ──► data/*.jsonl
+                                          │
+                        ┌─────────────────▼─────────────────┐
+                        │        Python research layer       │
+                        │  calibration · strategies ·        │
+                        │  evaluation · scenarios            │
+                        └─────────────────┬─────────────────┘
+                                          │  (pybind11)
+                                   ┌──────▼──────┐
+                                   │  fastsim    │  C++ simulation core
+                                   │  (C++ core) │  run_market_making loop
+                                   └──────┬──────┘
+                                          ▼
+                                  results · plots · report
+```
+
+The entire research workflow lives in Python for fast iteration; only the
+performance-critical simulation loop is compiled to C++ and called through pybind11.
+
+## Repository structure
+
+```
+optimal-market-making/
+├── src/
+│   └── main.cpp          # C++ simulation core (pybind11 module: fastsim)
+├── python/
+│   ├── record.py         # live order-book + trade recorder
+│   ├── simulator.py      # Python reference simulator (fill model)
+│   ├── strategies.py     # fixed-spread baseline + Avellaneda–Stoikov
+│   ├── evaluation.py     # metrics + Monte-Carlo evaluation
+│   ├── scenarios.py      # bootstrap paths + stress scenarios
+│   └── analysis.ipynb    # calibration, comparison, and plots
+├── report/               # writeup
+├── CMakeLists.txt        # C++ build config
+├── pyproject.toml        # build (scikit-build-core + pybind11)
+├── requirements.txt
+└── README.md
+```
+
+## Getting started
+
+### Prerequisites
+- Python 3.12 (recommended for prebuilt-wheel support)
+- A C++ compiler (MSVC "Desktop development with C++" on Windows; g++ on Linux;
+  Xcode command-line tools on macOS)
+
+### Setup
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1   |   macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+pip install .                 # builds the C++ extension via scikit-build-core
+python -c "import fastsim; print(fastsim.add(2, 3))"   # smoke test -> 5
+```
+
+### Collect data
+```bash
+python python/record.py       # run from repo root; leave running for 1+ hours
+```
+
+### Run the analysis
+Open `python/analysis.ipynb` and run the cells to calibrate parameters, run the
+baseline and Avellaneda–Stoikov strategies, and reproduce the comparison plots.
+
+## Methodology
+
+1. **Data collection** — record live L2 order-book snapshots and trades from a crypto
+   exchange.
+2. **Calibration** — estimate volatility (σ), fill-intensity decay (κ), and arrival
+   rate from the recorded data.
+3. **Simulation** — an Avellaneda–Stoikov-style fill model: market orders arrive with
+   intensity `λ(δ) = A·e^(−κδ)` that decays with quote distance from the mid.
+4. **Baseline** — a fixed-spread quoter, tuned via a parameter sweep for a fair
+   benchmark.
+5. **Avellaneda–Stoikov** — inventory-adjusted reservation price and optimal spread.
+6. **Evaluation** — Monte-Carlo over many seeds and bootstrapped paths; stress tests
+   for trending and high-volatility regimes.
+
+## Tech stack
+
+Python · C++ · pybind11 · NumPy · pandas · CMake · ccxt
+
+## Limitations & future work
+
+The simulator makes deliberate simplifications: the mid-price is exogenous (no market
+impact), fills use an aggregated intensity rather than true queue position, and the
+model assumes no price drift (hence its vulnerability to adverse selection under
+trends). Planned extension: replace the Poisson arrival assumption with a **Hawkes
+process** to capture clustered order flow, and test out-of-sample whether the added
+complexity improves performance.
+
+## References
+
+- Avellaneda, M., & Stoikov, S. (2008). *High-frequency trading in a limit order
+  book.* Quantitative Finance.
+- Cartea, Á., Jaimungal, S., & Penalva, J. (2015). *Algorithmic and High-Frequency
+  Trading.* Cambridge University Press.
